@@ -15,44 +15,94 @@
 
         <nav>
             <a class="btnLink hvr-underline-center" href="#gettingStarted">Getting Started</a>
-            <a class="btnLink hvr-underline-center" href="#">Usage</a>
+            <a class="btnLink hvr-underline-center" href="#usage">Usage</a>
             <a class="btnLink hvr-underline-center" href="#">Resources</a>
             <a class="btnLink hvr-underline-center" href="#">FAQs</a>
         </nav>
     </section>
 
     <section id="gettingStarted">
-        <a class="miniNav hvr-underline-center" href="#">➜ Getting Started</a>
-        <a class="miniNav hvr-underline-center" href="#">Usage</a>
-        <a class="miniNav hvr-underline-center" href="#">Resources</a>
-        <a class="miniNav hvr-underline-center" href="#">FAQs</a>
+        <h1>Getting Started</h1>
         <br>
-        <h1>Getting Started —</h1>
-        <br>
-        <h3>Instalation:</h3>
+        <h2 class="upper">Instalation —</h2>
         <p>
-            To install Server&nbsp;•&nbsp;ily simply clone the GitHub Repository. 
+            <b>Node.js & NPM —</b>
+            To install Server&nbsp;•&nbsp;ily, you must first have Node.js installed along with NPM.
+            <br> <br>
+            If you need to install Node.js and NPM on your machine, please refer to their documentation. 
+            <br>
+            <a href="https://nodejs.org/en/docs/">Node.js→</a>
+            |
+            <a href="https://docs.npmjs.com/">NPM→</a>
+            
             <br> <br> <br>
-            <b>Cloning using Command Line (CLI):</b>
+            <b>NPM Dependencies —</b> "http-server" needs to be installed for Server&nbsp;•&nbsp;ily to run.
+            <br> <br>
+            To install "http-server" open terminal, and type: &nbsp; "<code>npm install http-server -g</code>"
+            <a href="https://github.com/indexzero/http-server">
+            <br>
+            Read http-server's Documentation ➜</a>
 
-            To clone the github repository enter 
+            <br> <br> <br>
+            <b>Download Server&nbsp;•&nbsp;ily — </b>
+            To use Server&nbsp;•&nbsp;ily either clone the GitHub repository or download a .zip copy through
+            GitHub.com
+
+            <br> <br>
+
+            <i>Using a Command Line Interface (CLI):</i>
+            To clone the github repository enter: &nbsp;
             <code>
                 "git clone: https://github.com/apmcknight/template.git"
             </code>
             into the terminal.
             <br> <br>
-            <b>Cloning using GitHub.com:</b>
+            <i>Downloading from GitHub.com:</i>
 
-            To clone the github repository visit 
+            To download a ".zip" copy of the repository, visit 
             <a target="_blank" href="http://www.github.com/apmcknight/template
-            ">GitHub.com/apmcknight/serverily</a>, then click "Clone or Download"
+            ">GitHub.com/apmcknight/template</a>, then click "Clone or Download"
         </p>
+        
         <br>
-
-        <h1>Docs are currently being finished, Sorry 😬</h1>
-        <h3>Note: These docs are intended for internal use only.</h3>
     </section>
     
+    <section id="usage">
+        <h1>Usage</h1>
+        <p>
+            <b>Start Building —</b>
+            After you've installed dev dependencies, you can start building!
+
+            <br> <br>
+
+            In terminal, change your directory &nbsp; <code>($cd)</code> &nbsp; into the path you cloned the repo.
+            <br>
+            Then change directory into the cloned repository &nbsp; <code>(~pathname UserName$ cd template)</code>
+
+            <br> <br>
+            Once you're in the repository directory, enter &nbsp; <code>"npm start"</code> &nbsp; A http-server should
+            start up, and you should see a message written in terminal: <br>
+            <br>
+            <code>
+                Starting up http-server, serving ./app
+                <br>
+                Avaiable on:
+                (YOUR IP ADDRESS)
+            </code>
+
+            <br> <br>
+
+            Open a web borwser, and naviage to "localhost: 8080", you should see this:
+        </p>
+
+        <img class="smallImg" src="./start.png" alt="Error 404, Image not Found OR You have images disabled.">
+
+        <p>
+            Navigate to the &nbsp; <code>"./app"</code> &nbsp; directory to begin building your app.
+        </p>
+
+        <br> <br> <br>
+    </section>
 
     <script>
         $(document).ready(function () {

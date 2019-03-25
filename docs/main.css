@@ -6,6 +6,17 @@ body {
     text-align: center;
 }
 
+.upper{text-transform: uppercase; letter-spacing: 1px;}
+
+.smallImg {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    max-width: 60%;
+    -webkit-box-shadow: 2px 4px 61px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 61px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 61px -12px rgba(0, 0, 0, 0.75);
+}
+
 .navigation{
     margin-top: 150px;
     text-align: center;
@@ -18,21 +29,19 @@ body {
     padding-top: 50px;
     padding-left: 50px;
     text-align: left;
-    height: 900px;
+    height: auto;
+    background: rgb(235, 235, 235);
+}
+
+#usage{
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: left;
+    height: auto;
+    background: rgb(235, 235, 235);
 }
 
 #gettingStarted>h1{font-size: 30px;}
-
-.miniNav{
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000000;
-    margin-right: 15px;
-    font-size: 13px;
-    padding-bottom: 5px;
-}
 
 .header{
     position: relative;
