@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Server•ily Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="navigation">
+        <img src="icon.png" alt="Serverly Icon">
+        <h1 class="header">Server&nbsp;•&nbsp;ily Documenation</h1>
+
+        <nav>
+            <a class="btnLink hvr-underline-center" href="#gettingStarted">Getting Started</a>
+            <a class="btnLink hvr-underline-center" href="#">Usage</a>
+            <a class="btnLink hvr-underline-center" href="#">Resources</a>
+            <a class="btnLink hvr-underline-center" href="#">FAQs</a>
+        </nav>
+    </section>
+
+    <section id="gettingStarted">
+        <a class="miniNav hvr-underline-center" href="#">➜ Getting Started</a>
+        <a class="miniNav hvr-underline-center" href="#">Usage</a>
+        <a class="miniNav hvr-underline-center" href="#">Resources</a>
+        <a class="miniNav hvr-underline-center" href="#">FAQs</a>
+        <br>
+        <h1>Getting Started —</h1>
+        <br>
+        <h3>Instalation:</h3>
+        <p>
+            To install Server&nbsp;•&nbsp;ily simply clone the GitHub Repository. 
+            <br> <br> <br>
+            <b>Cloning using Command Line (CLI):</b>
+
+            To clone the github repository enter 
+            <code>
+                "git clone: https://github.com/apmcknight/serverily.git"
+            </code>
+            into the terminal.
+            <br> <br>
+            <b>Cloning using GitHub.com:</b>
+
+            To clone the github repository visit 
+            <a target="_blank" href="http://www.github.com/apmcknight/serverily
+            ">GitHub.com/apmcknight/serverily</a>, then click "Clone or Download"
+        </p>
+        <br>
+
+        <h1>Docs are currently being finished, Sorry 😬</h1>
+        <h3>Note: These docs are intended for internal use only.</h3>
+    </section>
+    
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+</html>
